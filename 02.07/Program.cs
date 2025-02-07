@@ -19,6 +19,7 @@ namespace _02._07
             Console.WriteLine();
 
 
+
             Konyv konyv2 = new Konyv("Egri csillagok", "Gárdonyi Géza");
             Console.WriteLine(konyv2);
         }
