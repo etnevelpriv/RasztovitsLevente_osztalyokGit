@@ -31,19 +31,41 @@ namespace _02._07
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Film Class:");
             Console.ForegroundColor = ConsoleColor.White;
+
             Film film1 = new Film("A keresztapa", "Francis Ford Coppola", 175, "dráma", true);
             film1.Jatszas();
             film1.MufajModositas("bűnügyi");
             film1.HosszNovelese(10);
             Console.WriteLine(film1);
             Console.WriteLine();
+
             Film film2 = new Film("Titanic", "James Cameron");
             Console.WriteLine(film2);
+            Console.WriteLine();
+        }
+
+        static void Karakter(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Karakter Class:");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Karakter karakter1 = new Karakter("Gandalf", 10, 190, 20);
+            karakter1.Tamadas();
+            karakter1.Gyogyulas(50);
+            karakter1.Szintlepes();
+            Console.WriteLine(karakter1);
+            Console.WriteLine();
+
+            Karakter karakter2 = new Karakter("Frodo", 50);
+            Console.WriteLine(karakter2);
+            Console.WriteLine();
         }
         static void Main(string[] args)
         {
             Konyv(args);
             Film(args);
+            Karakter(args);
         }
     }
 }
