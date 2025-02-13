@@ -79,12 +79,31 @@ namespace _02._07
             Console.WriteLine(urhajo2);
             Console.WriteLine();
         }
+
+        static void KemKuldetes(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("KemKuldetes Class:");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            KemKuldetes kuldetes1 = new KemKuldetes("Golyóállósejhaj", "Oroszország", 2, 70);
+            kuldetes1.KuldetesInditasa();
+            kuldetes1.VeszelySzintNovelese(5);
+            kuldetes1.SikerEselyNovelese(30);
+            Console.WriteLine(kuldetes1);
+            Console.WriteLine();
+
+            KemKuldetes kuldetes2 = new KemKuldetes("007", "Kína");
+            Console.WriteLine(kuldetes2);
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
             Konyv(args);
             Film(args);
             Karakter(args);
             Urhajo(args);
+            KemKuldetes(args);
         }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Film.cs" />
     <Compile Include="Karakter.cs" />
+    <Compile Include="KemKuldetes.cs" />
     <Compile Include="konyv.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
