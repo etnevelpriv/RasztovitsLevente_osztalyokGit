@@ -61,11 +61,30 @@ namespace _02._07
             Console.WriteLine(karakter2);
             Console.WriteLine();
         }
+
+        static void Urhajo(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Urhajo Class:");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Urhajo urhajo1 = new Urhajo("Millennium Falcon", 1000, 10, 50);
+            urhajo1.Indulas();
+            urhajo1.Tankolas(20);
+            urhajo1.Landolas();
+            Console.WriteLine(urhajo1);
+            Console.WriteLine();
+
+            Urhajo urhajo2 = new Urhajo("X-Wing", 5);
+            Console.WriteLine(urhajo2);
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
             Konyv(args);
             Film(args);
             Karakter(args);
+            Urhajo(args);
         }
     }
 }
